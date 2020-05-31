@@ -49,11 +49,21 @@ min_month = months[min_month_index]
 #round average change to correct number of decimal places
 avg_change_dec = round (avg_change, 2)
 
-#begin print
-print (f"""financial analysis
+#define financial analysis string
+financial_analysis = (f"""financial analysis
 ------------------------------
 total: ${net_profit}
 average change: ${avg_change_dec}
 greatest increase in profits: {max_month} (${max_change})
 greatest decrease in profits: {min_month} (${min_change})
 """)
+
+#print to terminal
+print (financial_analysis)
+
+#export analysis to .txt file
+analysis_output = "analysis/analysis_output.txt"
+
+#write analysis contents to .txt file
+with open (analysis_output, 'w') as text:
+    text.write (financial_analysis)
