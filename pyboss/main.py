@@ -107,7 +107,7 @@ with open (bosspath) as bossfile:
 zip_data = zip (e_id, first_name, last_name, dob, ssn, state)
 
 #export info to new csv file
-employee_output = "resources/updated_employee_data.csv"
+employee_output = "analysis/updated_employee_data.csv"
 
 #write contents to csv file w/ header
 with open (employee_output, 'w', newline = '') as employeefile:
