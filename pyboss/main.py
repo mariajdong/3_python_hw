@@ -84,7 +84,6 @@ with open (bosspath) as bossfile:
     #begin loop through rows, populate respective lists
     for row in bossreader:
         e_id.append (row[0])
-        # state.append (row[4])
 
         #split full name into first and last
         first_last = row[1].split (" ", 1)
