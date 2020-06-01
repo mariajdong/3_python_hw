@@ -111,7 +111,7 @@ zip_data = zip (e_id, first_name, last_name, dob, ssn, state)
 employee_output = "resources/updated_employee_data.csv"
 
 #write contents to csv file w/ header
-with open (employee_output, 'w') as employeefile:
+with open (employee_output, 'w', newline = '') as employeefile:
     bosswriter = csv.writer (employeefile)
     bosswriter.writerow (['employee ID', 'name', 'DOB', 'SSN', 'state'])
     bosswriter.writerows (zip_data)
