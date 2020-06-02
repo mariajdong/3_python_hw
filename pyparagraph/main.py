@@ -54,6 +54,7 @@ average sentence length: {round (avg_sentence_length, 1)}"""
     with open (output_path, 'w') as analysis:
         analysis.write (output)
 
+#define output paths, create new txt files
 output_path1 = "analysis/p1_analysis.txt"
 output_path2 = "analysis/p2_analysis.txt"
 
